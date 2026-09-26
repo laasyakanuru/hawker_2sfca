@@ -1,0 +1,5 @@
+table,fk,rows_with_fk,orphans
+dim_demand_point,sz_key,18461,0
+dim_hawker_centre,sz_key,129,0
+dim_hdb_block,sz_key,10796,0
+dim_mrt_station,sz_key,185,0

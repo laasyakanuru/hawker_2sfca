@@ -1,0 +1,23 @@
+# Python / editor clutter
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+.vscode/
+
+# secrets - API keys live in env vars, never in the repo
+.env
+*.env
+
+# too large for GitHub (100 MB hard limit) - teammates re-download with:
+#   python src/fetch_datagov.py landuse_geojson
+# (not needed to rebuild: the land-use grid it produces is cached in data/interim/)
+data/external/mp2019_land_use.geojson
+
+# rebuilt in seconds by `python src/build_model.py`
+data/processed/hawker_2sfca.sqlite
+
+# partial downloads
+*.part

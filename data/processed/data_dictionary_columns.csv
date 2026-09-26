@@ -1,0 +1,277 @@
+table,column,description,unit,dtype,pct_null,n_distinct,example
+dim_planning_area,pa_key,"Planning area key: upper-case name, punctuation removed (joins to dim_planning_area)",key,str,0.0,55,ANG MO KIO
+dim_planning_area,planning_area,Planning area name as written in the census file,text,str,0.0,55,Ang Mo Kio
+dim_planning_area,resident_pop,Total residents (census file),persons,int64,0.0,49,158730
+dim_planning_area,region,"URA region (Central, East, North, North-East, West)",category,str,0.0,5,NORTH-EAST REGION
+dim_planning_area,n_subzones,Number of subzones in the planning area,count,int64,0.0,15,12
+dim_planning_area,households_2020,"Resident households, Census 2020",households,float64,45.5,30,60220.0
+dim_planning_area,pct_hh_no_employed,"Households with no employed person, Census 2020",%,float64,45.5,30,19.02255139659238
+dim_planning_area,pct_hh_below_3k,"Households earning < $3,000/month from work, incl. no employed person, Census 2020",%,float64,45.5,30,34.54614899199575
+dim_planning_area,pct_hh_20k_plus,"Households earning >= $20,000/month from work, Census 2020",%,float64,45.5,30,10.847254973595936
+dim_planning_area,median_hh_income_approx,"Approximate median monthly household income from work, interpolated within the median income band, Census 2020",SGD / month,float64,45.5,29,5606.0
+dim_subzone,sz_key,"Subzone key: upper-case name, punctuation removed (joins to dim_subzone)",key,str,0.0,332,ANG MO KIO TOWN CENTRE
+dim_subzone,subzone,Subzone name as written in the census file,text,str,0.0,332,Ang Mo Kio Town Centre
+dim_subzone,pa_key,"Planning area key: upper-case name, punctuation removed (joins to dim_planning_area)",key,str,0.0,55,ANG MO KIO
+dim_subzone,planning_area,Planning area name as written in the census file,text,str,0.0,55,Ang Mo Kio
+dim_subzone,sz_key_geo,Matching subzone key in the MP2019 boundary file (differs from sz_key only if names were fuzzy-matched; see qa_subzone_name_reconcile.csv),key,str,0.0,332,ANG MO KIO TOWN CENTRE
+dim_subzone,sz_code,"URA MP2019 subzone code, e.g. AMSZ01",code,str,0.0,332,AMSZ01
+dim_subzone,pa_key_geo,Planning area key from the boundary file,key,str,0.0,55,ANG MO KIO
+dim_subzone,pa_code,URA MP2019 planning area code,code,str,0.0,55,AM
+dim_subzone,region_geo,Region name from the boundary file,category,str,0.0,5,NORTH-EAST REGION
+dim_subzone,area_km2,Land area of the subzone,km2,float64,0.0,332,0.3168820171929598
+dim_subzone,centroid_x,"Subzone centre point, SVY21 easting (area-weighted centroid)",m,float64,0.0,332,29501.80302100532
+dim_subzone,centroid_y,"Subzone centre point, SVY21 northing",m,float64,0.0,332,39419.478647431446
+dim_subzone,centroid_lat,"Subzone centre point, latitude",degrees,float64,0.0,332,1.3727695764629284
+dim_subzone,centroid_lon,"Subzone centre point, longitude",degrees,float64,0.0,332,103.84681301864411
+dim_subzone,region,"URA region (Central, East, North, North-East, West)",category,str,0.0,5,NORTH-EAST REGION
+dim_hawker_centre,hc_key,Hawker centre key HC001-HC129 (joins to dim_hawker_centre),key,str,0.0,129,HC001
+dim_hawker_centre,hc_name,"Hawker centre name (NEA master list, file 02)",text,str,0.0,129,Jurong East Street 24 Blk 254 (Yuhua Village Market and Food
+dim_hawker_centre,hc_name_nea_2026,Name in NEA's 2026 cleaning/closure file (01); blank if the centre is not in it,text,str,4.7,123,Jurong East Street 24 Blk 254 (Yuhua Village Market and Food
+dim_hawker_centre,objectid_02,OBJECTID in the NEA master file (02),id,int64,0.0,129,119361
+dim_hawker_centre,serial_no_01,serial_no in the NEA closure file (01),id,float64,4.7,123,61.0
+dim_hawker_centre,status,"Lifecycle status from file 02: Existing, Existing (new), Existing (replacement), Interim Centre, Under Construction",category,str,0.0,5,Existing
+dim_hawker_centre,hup_programme,"Hawker Upgrading Programme category from file 02, e.g. HUP Standard Upgrading, New Centre",category,str,0.0,9,HUP Reconfiguration
+dim_hawker_centre,in_baseline,True if the centre counts as open supply today (config.BASELINE_STATUSES),boolean,bool,0.0,2,True
+dim_hawker_centre,in_future,True if the centre counts as supply in the future scenario (adds Under Construction),boolean,bool,0.0,1,True
+dim_hawker_centre,cooked_food_stalls,"Number of cooked-food stalls = supply S_j in 2SFCA (2026 figure from file 01, else file 02)",stalls,float64,0.0,56,60.0
+dim_hawker_centre,market_stalls,Number of wet-market stalls (file 01; not used as supply),stalls,float64,4.7,69,87.0
+dim_hawker_centre,stalls_source,Which file cooked_food_stalls came from: 01_closure_2026 or 02_master,category,str,0.0,2,01_closure_2026
+dim_hawker_centre,qa_stall_diff_01_vs_02,Stall count in file 01 minus file 02 (0 = files agree),stalls,float64,4.7,7,0.0
+dim_hawker_centre,est_completion,Original / expected completion date or year (file 02),date,str,0.8,114,1983-04-30
+dim_hawker_centre,hup_completion_date,Date its Hawker Upgrading Programme works finished (file 02),date,str,26.4,93,05/07/2006
+dim_hawker_centre,postal_code,6-digit Singapore postal code,text,int64,0.0,129,600254
+dim_hawker_centre,address,Street address (NEA),text,str,4.7,123,"Blk 254, Jurong East Street 24, Singapore 600254"
+dim_hawker_centre,lat,"Latitude, WGS84",degrees,float64,0.0,129,1.3434881852952274
+dim_hawker_centre,lon,"Longitude, WGS84",degrees,float64,0.0,129,103.73773841154456
+dim_hawker_centre,x_svy21,"Easting in SVY21 (Singapore's metre grid, EPSG:3414); used for all distances",m,float64,0.0,129,17363.0
+dim_hawker_centre,y_svy21,Northing in SVY21 (EPSG:3414),m,float64,0.0,129,36181.9
+dim_hawker_centre,qa_xy_mismatch_m,Distance between file 02's own SVY21 point and its lat/lon; >50 m flags a bad record (lat/lon is used),m,float64,0.0,7,0.1
+dim_hawker_centre,sz_key,"Subzone key: upper-case name, punctuation removed (joins to dim_subzone)",key,str,0.0,93,YUHUA EAST
+dim_hawker_centre,pa_key,"Planning area key: upper-case name, punctuation removed (joins to dim_planning_area)",key,str,0.0,32,JURONG EAST
+dim_hdb_block,block_id,"HDB block key 'BLK_NO|STREET' as in the HDB file, e.g. 1|BEACH RD",key,str,0.0,13357,1|BEACH RD
+dim_hdb_block,blk_no,Block number (HDB file),text,str,0.0,3437,1
+dim_hdb_block,street,"Street name as abbreviated in the HDB file, e.g. BT BATOK ST 21",text,str,0.0,657,BEACH RD
+dim_hdb_block,hdb_town,HDB town name decoded from bldg_contract_town,category,str,0.0,27,KALLANG/WHAMPOA
+dim_hdb_block,bldg_contract_town,"HDB town code, e.g. AMK, TAP, KWN",code,str,0.0,27,KWN
+dim_hdb_block,max_floor_lvl,Highest floor of the block,floors,int64,0.0,46,16
+dim_hdb_block,year_completed,Year the block was completed,year,int64,0.0,71,1970
+dim_hdb_block,residential,Block has flats,boolean,bool,0.0,2,True
+dim_hdb_block,commercial,Block has shops/commercial units,boolean,bool,0.0,2,True
+dim_hdb_block,market_hawker,Block houses a market or hawker centre,boolean,bool,0.0,2,False
+dim_hdb_block,total_dwelling_units,Total flats in the block,flats,int64,0.0,366,142
+dim_hdb_block,units_HDB_1_2R,"Flats in the block of type 1- and 2-room (incl. studios, rental)",flats,int64,0.0,245,1
+dim_hdb_block,units_HDB_3R,Flats in the block of type 3-room (sold + rental),flats,int64,0.0,246,138
+dim_hdb_block,units_HDB_4R,Flats in the block of type 4-room,flats,int64,0.0,218,1
+dim_hdb_block,units_HDB_5R_EX,"Flats in the block of type 5-room, executive and multi-generation",flats,int64,0.0,139,2
+dim_hdb_block,qa_units_minus_total,Sum of the four unit groups minus total_dwelling_units (0 = reconciles),flats,int64,0.0,1,0
+dim_hdb_block,geocode_status,"OneMap result: matched, matched_low_road_similarity, not_found, or not_attempted (non-residential blocks)",category,str,0.0,2,matched
+dim_hdb_block,postal_code,6-digit Singapore postal code,text,str,19.2,10498,190001
+dim_hdb_block,onemap_road,Full road name returned by OneMap,text,str,19.2,632,BEACH ROAD
+dim_hdb_block,lat,"Latitude, WGS84",degrees,float64,19.2,10796,1.303671350608798
+dim_hdb_block,lon,"Longitude, WGS84",degrees,float64,19.2,10796,103.8644786609251
+dim_hdb_block,x_svy21,"Easting in SVY21 (Singapore's metre grid, EPSG:3414); used for all distances",m,float64,19.2,10796,31467.8698403065
+dim_hdb_block,y_svy21,Northing in SVY21 (EPSG:3414),m,float64,19.2,10796,31778.967714185732
+dim_hdb_block,sz_key,"Subzone key: upper-case name, punctuation removed (joins to dim_subzone)",key,str,19.2,160,CRAWFORD
+dim_hdb_block,sz_assign_method,"How the subzone was found: point_in_polygon, nearest_centroid (point fell just outside all subzones, e.g. on the coast), or by_definition (a subzone centre point)",category,str,19.2,1,point_in_polygon
+dim_mrt_station,stn_key,"MRT/LRT station code(s) from LTA, e.g. NS24/NE6/CC1 (joins to dim_mrt_station)",key,str,0.0,185,BP10
+dim_mrt_station,station_name,"Station name, upper case (LTA)",text,str,0.0,184,FAJAR
+dim_mrt_station,station_name_display,"Station name, mixed case",text,str,0.0,184,Fajar
+dim_mrt_station,rail_type,MRT or LRT,category,str,0.0,2,LRT
+dim_mrt_station,lat,"Latitude, WGS84",degrees,float64,0.0,184,1.38453891548182
+dim_mrt_station,lon,"Longitude, WGS84",degrees,float64,0.0,184,103.770857044839
+dim_mrt_station,station_key,"Physical-station key (name); groups codes at one location, e.g. STEVENS DT10 + TE11",key,str,0.0,184,FAJAR
+dim_mrt_station,coord_source,Where lat/lon came from: file_07 or onemap (stations missing in file 07),category,str,0.0,2,file_07
+dim_mrt_station,x_svy21,"Easting in SVY21 (Singapore's metre grid, EPSG:3414); used for all distances",m,float64,0.0,184,21048.865989225666
+dim_mrt_station,y_svy21,Northing in SVY21 (EPSG:3414),m,float64,0.0,184,40720.95971562718
+dim_mrt_station,wkday_tap_in_avg,"Average weekday tap-ins per day, all hours, Aug 2026",trips / day,float64,0.0,184,3439.3
+dim_mrt_station,wkday_tap_out_avg,"Average weekday tap-outs per day, all hours, Aug 2026",trips / day,float64,0.0,185,3406.2
+dim_mrt_station,wkday_am_peak_tap_out_avg,"Average weekday tap-outs 07:00-09:59 per day (people arriving, worker proxy used as demand in the daytime scenario)",trips / day,float64,0.0,185,371.6
+dim_mrt_station,wkday_lunch_tap_in_avg,Average weekday tap-ins 11:00-13:59 per day,trips / day,float64,0.0,185,471.0
+dim_mrt_station,wkday_lunch_tap_out_avg,Average weekday tap-outs 11:00-13:59 per day,trips / day,float64,0.0,183,398.2
+dim_mrt_station,sz_key,"Subzone key: upper-case name, punctuation removed (joins to dim_subzone)",key,str,0.0,128,FAJAR
+dim_demand_point,dp_key,"Demand point key '<TYPE>-<id>', e.g. HDB-1|BEACH RD, CONDO-P00042 (joins to dim_demand_point)",key,str,0.0,18461,HDB-1|BEACH RD
+dim_demand_point,dwelling_type,"HDB, CONDO (incl. ECs and apartments), LANDED, OTHER (shophouses, institutions etc.); ALL = every type combined; WORKER = MRT commuters (daytime scenario only)",category,str,0.0,4,HDB
+dim_demand_point,source,"Where the location came from: hdb_block_onemap, ura_project, mp2019_landuse_grid (100 m cell of residential land), subzone_centroid (fallback)",category,str,0.0,3,hdb_block_onemap
+dim_demand_point,label,"Readable id of the location: HDB block_id, or 'project | street' for URA points; blank otherwise",text,str,41.6,10786,1|BEACH RD
+dim_demand_point,sz_key,"Subzone key: upper-case name, punctuation removed (joins to dim_subzone)",key,str,0.0,241,CRAWFORD
+dim_demand_point,pa_key,"Planning area key: upper-case name, punctuation removed (joins to dim_planning_area)",key,str,0.0,42,KALLANG
+dim_demand_point,sz_assign_method,"How the subzone was found: point_in_polygon, nearest_centroid (point fell just outside all subzones, e.g. on the coast), or by_definition (a subzone centre point)",category,str,0.0,2,point_in_polygon
+dim_demand_point,x_svy21,"Easting in SVY21 (Singapore's metre grid, EPSG:3414); used for all distances",m,float64,0.0,11317,31467.8698403065
+dim_demand_point,y_svy21,Northing in SVY21 (EPSG:3414),m,float64,0.0,11239,31778.967714185732
+dim_demand_point,lat,"Latitude, WGS84",degrees,float64,0.0,18418,1.303671350608798
+dim_demand_point,lon,"Longitude, WGS84",degrees,float64,0.0,18418,103.8644786609251
+dim_demand_point,has_coords,True if the point has coordinates (points without are excluded from 2SFCA),boolean,bool,0.0,1,True
+dim_demand_point,weight,"Allocation weight used to split the subzone population between points: HDB = flats, URA = sale units + rental contracts, grid cell / centre point = 1",weight,float64,0.0,366,142.0
+dim_demand_point,population,Residents allocated to this point,persons,float64,0.0,7119,293.1990511800103
+dim_demand_point,pop_65plus,Residents aged 65+ (subzone 65+ share applied to the population),persons,float64,0.0,7363,105.84524377249384
+dim_demand_point,pop_HDB_1_2R,"Of which in HDB 1- and 2-room flats (incl. studios, rental)",persons,float64,41.6,732,1.5174129353233832
+dim_demand_point,pop_HDB_3R,Of which in HDB 3-room flats,persons,float64,41.6,2076,282.83168316831683
+dim_demand_point,pop_HDB_4R,Of which in HDB 4-room flats,persons,float64,41.6,3492,3.0952380952380953
+dim_demand_point,pop_HDB_5R_EX,"Of which in HDB 5-room, executive and multi-generation flats",persons,float64,41.6,2676,5.754716981132075
+fact_hc_closure,closure_id,Closure window key CL0001...,key,str,0.0,513,CL0001
+fact_hc_closure,hc_key,Hawker centre key HC001-HC129 (joins to dim_hawker_centre),key,str,0.0,123,HC001
+fact_hc_closure,start_date,First day closed,date,str,0.0,112,2026-03-23
+fact_hc_closure,end_date,Last day closed (inclusive),date,str,0.0,189,2026-03-24
+fact_hc_closure,remarks,"NEA remarks, e.g. Repairs and Redecoration",text,str,89.7,16,Repairs and Redecoration
+fact_hc_closure,closure_type,"cleaning (quarterly) or other_works (renovation, repairs, redevelopment)",category,str,0.0,2,cleaning
+fact_hc_closure,period,"Q1-Q4 for cleaning, OTHER for other works",category,str,0.0,5,Q1
+fact_hc_closure,duration_days,"Days closed, inclusive",days,int64,0.0,23,2
+fact_hc_closure,partial_closure_flag,True if the remarks say only part of the centre closed (still treated as a full closure of cooked-food supply),boolean,bool,0.0,2,False
+fact_subzone_population,sz_key,"Subzone key: upper-case name, punctuation removed (joins to dim_subzone)",key,str,0.0,332,ANG MO KIO TOWN CENTRE
+fact_subzone_population,pa_key,"Planning area key: upper-case name, punctuation removed (joins to dim_planning_area)",key,str,0.0,55,ANG MO KIO
+fact_subzone_population,resident_pop,Total residents,persons,int64,0.0,233,4840
+fact_subzone_population,Age_0_19,Residents aged 0-19,persons,int64,0.0,196,930
+fact_subzone_population,Age_20_64,Residents aged 20-64,persons,int64,0.0,224,2970
+fact_subzone_population,Age_65plus,Residents aged 65+,persons,int64,0.0,191,940
+fact_subzone_population,Pct_Age_65plus,Share of residents aged 65+,%,float64,0.0,228,19.42
+fact_subzone_population,pop_hdb,Residents in HDB flats (sum of the four HDB dwelling columns),persons,int64,0.0,158,2700
+fact_subzone_population,Dwelling_1_2_Room,Residents in HDB 1- and 2-room flats,persons,int64,0.0,102,0
+fact_subzone_population,Dwelling_3_Room,Residents in HDB 3-room flats,persons,int64,0.0,135,360
+fact_subzone_population,Dwelling_4_Room,Residents in HDB 4-room flats,persons,int64,0.0,152,580
+fact_subzone_population,Dwelling_5Room_Executive,Residents in HDB 5-room and executive flats,persons,int64,0.0,143,1760
+fact_subzone_population,Dwelling_Condo_Apartment,Residents in condominiums and other apartments (incl. ECs),persons,int64,0.0,179,2110
+fact_subzone_population,Dwelling_Landed,Residents in landed properties,persons,int64,0.0,93,0
+fact_subzone_population,Dwelling_Others,"Residents in other dwellings (shophouses, institutions etc.)",persons,int64,0.0,56,30
+fact_subzone_population,FloorArea_Population_Total,Residents with a known dwelling floor area,persons,int64,0.0,228,4810
+fact_subzone_population,FloorArea_60_or_less,Residents in homes with floor area 60 m2 or less,persons,int64,0.0,142,0
+fact_subzone_population,FloorArea_60_80,Residents in homes with floor area 61-80 m2,persons,int64,0.0,166,320
+fact_subzone_population,FloorArea_80_100,Residents in homes with floor area 81-100 m2,persons,int64,0.0,184,970
+fact_subzone_population,FloorArea_100_120,Residents in homes with floor area 101-120 m2,persons,int64,0.0,195,2910
+fact_subzone_population,FloorArea_over_120,Residents in homes with floor area over 120 m2,persons,int64,0.0,197,610
+fact_subzone_population,Pct_FloorArea_60_or_less,Share of residents in homes with floor area 60 m2 or less,%,float64,0.0,199,0.0
+fact_subzone_population,Pct_FloorArea_60_80,Share of residents in homes with floor area 61-80 m2,%,float64,0.0,201,6.65
+fact_subzone_population,Pct_FloorArea_80_100,Share of residents in homes with floor area 81-100 m2,%,float64,0.0,216,20.17
+fact_subzone_population,Pct_FloorArea_100_120,Share of residents in homes with floor area 101-120 m2,%,float64,0.0,214,60.5
+fact_subzone_population,Pct_FloorArea_over_120,Share of residents in homes with floor area over 120 m2,%,float64,0.0,229,12.68
+fact_subzone_population,FloorArea_Coverage_Pct,FloorArea_Population_Total as a share of resident_pop,%,float64,0.0,169,99.38
+fact_subzone_population,qa_dwelling_minus_total,Sum of dwelling columns minus resident_pop (non-zero from DOS rounding to 10),persons,int64,0.0,8,0
+fact_subzone_population_dwelling,sz_key,"Subzone key: upper-case name, punctuation removed (joins to dim_subzone)",key,str,0.0,332,ANG MO KIO TOWN CENTRE
+fact_subzone_population_dwelling,pa_key,"Planning area key: upper-case name, punctuation removed (joins to dim_planning_area)",key,str,0.0,55,ANG MO KIO
+fact_subzone_population_dwelling,census_column,"Original census column name, e.g. Dwelling_4_Room",text,str,0.0,7,Dwelling_1_2_Room
+fact_subzone_population_dwelling,population,Residents in that dwelling group,persons,int64,0.0,580,0
+fact_subzone_population_dwelling,dwelling_group,"HDB_1_2R, HDB_3R, HDB_4R, HDB_5R_EX, CONDO, LANDED, OTHER",category,str,0.0,7,HDB_1_2R
+fact_subzone_population_dwelling,dwelling_type,"HDB, CONDO (incl. ECs and apartments), LANDED, OTHER (shophouses, institutions etc.); ALL = every type combined; WORKER = MRT commuters (daytime scenario only)",category,str,0.0,4,HDB
+fact_pa_household_income,pa_key,"Planning area key: upper-case name, punctuation removed (joins to dim_planning_area)",key,str,0.0,31,ANG MO KIO
+fact_pa_household_income,income_band,"Monthly household income from work band, e.g. 3_000_3_999 = $3,000-3,999; NoEmployedPerson = no one working",category,str,0.0,19,NoEmployedPerson
+fact_pa_household_income,households,"Resident households in the band, Census 2020",households,float64,0.0,552,11455.0
+fact_pa_household_income,band_order,"Sort order of the band, 0 = NoEmployedPerson ... 18 = $20,000 and over",rank,int64,0.0,19,0
+fact_mrt_hourly,stn_key,"MRT/LRT station code(s) from LTA, e.g. NS24/NE6/CC1 (joins to dim_mrt_station)",key,str,0.0,185,BP10
+fact_mrt_hourly,day_type,WEEKDAY or WEEKENDS/HOLIDAY,category,str,0.0,2,WEEKDAY
+fact_mrt_hourly,hour,"Hour of day the trip started/ended, 0-23",hour,int64,0.0,20,0
+fact_mrt_hourly,tap_in_month,Total tap-ins in Aug 2026 for this day type and hour,trips,int64,0.0,5913,0
+fact_mrt_hourly,tap_out_month,Total tap-outs in Aug 2026 for this day type and hour,trips,int64,0.0,5981,1
+fact_mrt_hourly,n_days,"Days of this day type in Aug 2026 (20 weekdays, 11 weekend/holiday)",days,int64,0.0,2,20
+fact_mrt_hourly,tap_in_avg_day,tap_in_month / n_days,trips / day,float64,0.0,6472,0.0
+fact_mrt_hourly,tap_out_avg_day,tap_out_month / n_days,trips / day,float64,0.0,6499,0.05
+fact_demand_proximity,dp_key,"Demand point key '<TYPE>-<id>', e.g. HDB-1|BEACH RD, CONDO-P00042 (joins to dim_demand_point)",key,str,0.0,18461,HDB-1|BEACH RD
+fact_demand_proximity,nearest_hc_key,Nearest hawker centre open in the baseline,key,str,0.0,122,HC119
+fact_demand_proximity,nearest_hc_dist_m,Straight-line distance to it (x DETOUR_FACTOR),m,float64,0.0,11661,88.9
+fact_demand_proximity,n_hc_within_500m,Open centres within 500 m,count,int64,0.0,6,2
+fact_demand_proximity,n_hc_within_1km,Open centres within 1 km,count,int64,0.0,10,3
+fact_demand_proximity,n_hc_within_1_5km,Open centres within 1.5 km,count,int64,0.0,15,5
+fact_access_point,dp_key,"Demand point key '<TYPE>-<id>', e.g. HDB-1|BEACH RD, CONDO-P00042 (joins to dim_demand_point)",key,str,0.0,18645,HDB-1|BEACH RD
+fact_access_point,scenario,baseline = centres open today; future = + 6 under construction; daytime = baseline supply with weekday AM-peak MRT arrivals added as extra demand,category,str,0.0,3,baseline
+fact_access_point,method,"2sfca = every centre inside the catchment counts fully; e2sfca_gauss = nearer centres count more (Gaussian decay to 0 at the edge, headline); 3sfca_gauss = Gaussian + each resident's demand split between competing centres (used for closures)",category,str,0.0,3,2sfca
+fact_access_point,catchment_m,Catchment radius d0 (straight-line distance x DETOUR_FACTOR),m,int64,0.0,3,500
+fact_access_point,A,"Accessibility of this demand point: stalls reachable per 1,000 residents","stalls / 1,000 residents",float64,0.0,133921,15.861676
+fact_access_point,spar,A / national average (1 = average),ratio,float64,0.0,190801,9.98998
+fact_access_point,n_hc_in_reach,Open hawker centres within the catchment,count,int64,0.0,15,2
+fact_supply_ratio,hc_key,Hawker centre key HC001-HC129 (joins to dim_hawker_centre),key,str,0.0,129,HC001
+fact_supply_ratio,scenario,baseline = centres open today; future = + 6 under construction; daytime = baseline supply with weekday AM-peak MRT arrivals added as extra demand,category,str,0.0,3,baseline
+fact_supply_ratio,method,"2sfca = every centre inside the catchment counts fully; e2sfca_gauss = nearer centres count more (Gaussian decay to 0 at the edge, headline); 3sfca_gauss = Gaussian + each resident's demand split between competing centres (used for closures)",category,str,0.0,3,2sfca
+fact_supply_ratio,catchment_m,Catchment radius d0 (straight-line distance x DETOUR_FACTOR),m,int64,0.0,3,500
+fact_supply_ratio,is_open,Centre is open in this scenario,boolean,bool,0.0,2,True
+fact_supply_ratio,stalls,Cooked-food stalls counted (0 if closed),stalls,float64,0.0,56,60.0
+fact_supply_ratio,catchment_pop,Effective population competing for this centre = sum of distance-weighted residents (3SFCA: also x selection share),persons (weighted),float64,0.0,2054,19074.4165
+fact_supply_ratio,R_per_1000,"Supply ratio R_j: stalls per 1,000 effective catchment residents (higher = less crowded)","stalls / 1,000 residents",float64,0.0,1959,3.1456
+fact_supply_ratio,catchment_pop_hdb,Part of catchment_pop that is HDB residents (worker = daytime scenario only),persons (weighted),float64,0.0,1124,16984.4165
+fact_supply_ratio,catchment_pop_condo,Part of catchment_pop that is condo residents (worker = daytime scenario only),persons (weighted),float64,0.0,1131,1820.0
+fact_supply_ratio,catchment_pop_landed,Part of catchment_pop that is landed residents (worker = daytime scenario only),persons (weighted),float64,0.0,790,0.0
+fact_supply_ratio,catchment_pop_other,Part of catchment_pop that is other-dwelling residents (worker = daytime scenario only),persons (weighted),float64,0.0,800,270.0
+fact_supply_ratio,catchment_pop_worker,Part of catchment_pop that is MRT-commuter residents (worker = daytime scenario only),persons (weighted),float64,66.7,746,0.0
+agg_access_subzone,sz_key,"Subzone key: upper-case name, punctuation removed (joins to dim_subzone)",key,str,0.0,241,ADMIRALTY
+agg_access_subzone,dwelling_type,"HDB, CONDO (incl. ECs and apartments), LANDED, OTHER (shophouses, institutions etc.); ALL = every type combined; WORKER = MRT commuters (daytime scenario only)",category,str,0.0,5,HDB
+agg_access_subzone,population,Residents,persons,float64,0.0,578,13400.0
+agg_access_subzone,pop_65plus,Residents aged 65+ (subzone 65+ share applied to the population),persons,float64,0.0,883,1887.1833
+agg_access_subzone,pop_no_access,Residents with no open hawker centre within the catchment,persons,float64,0.0,973,5287.4826
+agg_access_subzone,stall_deficit_vs_national,"Extra stalls needed to lift these residents to the national average: sum of population x max(0, national - own access) / 1,000",stalls,float64,0.0,10663,8.3952
+agg_access_subzone,n_points,"Number of demand points (HDB blocks, private projects, land-use cells or centre points) the residents were placed at",count,int64,0.0,172,42
+agg_access_subzone,access_per_1000,"2SFCA accessibility: hawker stalls reachable per 1,000 residents, after accounting for how many other residents share those stalls; population-weighted average for the row","stalls / 1,000 residents",float64,0.0,10244,1.2247
+agg_access_subzone,access_65plus_per_1000,"Same score, weighted by residents aged 65+ instead of all residents","stalls / 1,000 residents",float64,1.4,10115,1.2247
+agg_access_subzone,pct_pop_no_access,pop_no_access as a share of population,%,float64,0.0,706,39.4588
+agg_access_subzone,spar,"Spatial Access Ratio = access / national average for the same scenario, method and catchment; 1 = average, <1 below average",ratio,float64,0.0,13358,0.7713
+agg_access_subzone,scenario,baseline = centres open today; future = + 6 under construction; daytime = baseline supply with weekday AM-peak MRT arrivals added as extra demand,category,str,0.0,3,baseline
+agg_access_subzone,method,"2sfca = every centre inside the catchment counts fully; e2sfca_gauss = nearer centres count more (Gaussian decay to 0 at the edge, headline); 3sfca_gauss = Gaussian + each resident's demand split between competing centres (used for closures)",category,str,0.0,3,2sfca
+agg_access_subzone,catchment_m,Catchment radius d0 (straight-line distance x DETOUR_FACTOR),m,int64,0.0,3,500
+agg_access_subzone,national_access_per_1000,"Population-weighted national average access for the same scenario, method and catchment","stalls / 1,000 residents",float64,0.0,3,1.5878
+agg_access_planning_area,pa_key,"Planning area key: upper-case name, punctuation removed (joins to dim_planning_area)",key,str,0.0,42,ANG MO KIO
+agg_access_planning_area,dwelling_type,"HDB, CONDO (incl. ECs and apartments), LANDED, OTHER (shophouses, institutions etc.); ALL = every type combined; WORKER = MRT commuters (daytime scenario only)",category,str,0.0,5,CONDO
+agg_access_planning_area,population,Residents,persons,float64,0.0,170,14510.0
+agg_access_planning_area,pop_65plus,Residents aged 65+ (subzone 65+ share applied to the population),persons,float64,0.0,183,3428.8459
+agg_access_planning_area,pop_no_access,Residents with no open hawker centre within the catchment,persons,float64,0.0,399,6133.3256
+agg_access_planning_area,stall_deficit_vs_national,"Extra stalls needed to lift these residents to the national average: sum of population x max(0, national - own access) / 1,000",stalls,float64,0.0,3514,9.7382
+agg_access_planning_area,n_points,"Number of demand points (HDB blocks, private projects, land-use cells or centre points) the residents were placed at",count,int64,0.0,120,227
+agg_access_planning_area,access_per_1000,"2SFCA accessibility: hawker stalls reachable per 1,000 residents, after accounting for how many other residents share those stalls; population-weighted average for the row","stalls / 1,000 residents",float64,0.0,2881,1.6705
+agg_access_planning_area,access_65plus_per_1000,"Same score, weighted by residents aged 65+ instead of all residents","stalls / 1,000 residents",float64,0.0,2907,1.6471
+agg_access_planning_area,pct_pop_no_access,pop_no_access as a share of population,%,float64,0.0,395,42.2696
+agg_access_planning_area,spar,"Spatial Access Ratio = access / national average for the same scenario, method and catchment; 1 = average, <1 below average",ratio,float64,0.0,3786,1.0521
+agg_access_planning_area,scenario,baseline = centres open today; future = + 6 under construction; daytime = baseline supply with weekday AM-peak MRT arrivals added as extra demand,category,str,0.0,3,baseline
+agg_access_planning_area,method,"2sfca = every centre inside the catchment counts fully; e2sfca_gauss = nearer centres count more (Gaussian decay to 0 at the edge, headline); 3sfca_gauss = Gaussian + each resident's demand split between competing centres (used for closures)",category,str,0.0,3,2sfca
+agg_access_planning_area,catchment_m,Catchment radius d0 (straight-line distance x DETOUR_FACTOR),m,int64,0.0,3,500
+agg_access_planning_area,national_access_per_1000,"Population-weighted national average access for the same scenario, method and catchment","stalls / 1,000 residents",float64,0.0,3,1.5878
+fact_hc_closure_impact,hc_key,Hawker centre key HC001-HC129 (joins to dim_hawker_centre),key,str,0.0,123,HC020
+fact_hc_closure_impact,stalls,Cooked-food stalls at the centre being closed,stalls,float64,0.0,55,122.0
+fact_hc_closure_impact,method,"2sfca = every centre inside the catchment counts fully; e2sfca_gauss = nearer centres count more (Gaussian decay to 0 at the edge, headline); 3sfca_gauss = Gaussian + each resident's demand split between competing centres (used for closures)",category,str,0.0,1,3sfca_gauss
+fact_hc_closure_impact,catchment_m,Catchment radius d0 (straight-line distance x DETOUR_FACTOR),m,int64,0.0,1,1000
+fact_hc_closure_impact,pop_in_catchment,Residents within the catchment of the closed centre,persons,float64,0.0,123,37907.6515
+fact_hc_closure_impact,pop_losing_all_access,Residents left with no open centre in reach when it closes,persons,float64,0.0,89,34124.5049
+fact_hc_closure_impact,mean_delta_access_affected,Population-weighted change in access for residents in its catchment (negative = worse),"stalls / 1,000 residents",float64,0.0,123,-3.1979
+fact_hc_closure_impact,national_delta_access,Change in the national average access,"stalls / 1,000 residents",float64,0.0,55,-0.029
+fact_hc_closure_impact,max_neighbour_crowding_pct,Largest % fall in R_per_1000 at any other centre as displaced diners move there,%,float64,0.0,118,1.0203
+fact_hc_closure_impact,n_neighbours_crowded_5pct,Other centres whose R_per_1000 falls by 5% or more,count,int64,0.0,8,0
+fact_hc_closure_impact,pop_in_catchment_hdb,pop_in_catchment: HDB residents only,persons,float64,0.0,121,31400.0
+fact_hc_closure_impact,pop_losing_all_access_hdb,pop_losing_all_access: HDB residents only,persons,float64,0.0,60,30453.5201
+fact_hc_closure_impact,pop_in_catchment_condo,pop_in_catchment: condo residents only,persons,float64,0.0,122,5537.6515
+fact_hc_closure_impact,pop_losing_all_access_condo,pop_losing_all_access: condo residents only,persons,float64,0.0,80,3370.9848
+fact_hc_closure_impact,pop_in_catchment_landed,pop_in_catchment: landed residents only,persons,float64,0.0,91,670.0
+fact_hc_closure_impact,pop_losing_all_access_landed,pop_losing_all_access: landed residents only,persons,float64,0.0,53,0.0
+fact_hc_closure_impact,pop_in_catchment_other,pop_in_catchment: other-dwelling residents only,persons,float64,0.0,68,300.0
+fact_hc_closure_impact,pop_losing_all_access_other,pop_losing_all_access: other-dwelling residents only,persons,float64,0.0,32,300.0
+fact_hc_closure_impact,hc_name,"Hawker centre name (NEA master list, file 02)",text,str,0.0,123,Taman Jurong Market and Food Centre
+fact_hc_closure_impact,impact_rank,Criticality score: rank by pop_losing_all_access + rank by mean_delta_access_affected; lower = more critical,rank score,float64,0.0,86,34.0
+fact_daily_access,date,Calendar day,date,str,0.0,365,2026-01-01
+fact_daily_access,method,"2sfca = every centre inside the catchment counts fully; e2sfca_gauss = nearer centres count more (Gaussian decay to 0 at the edge, headline); 3sfca_gauss = Gaussian + each resident's demand split between competing centres (used for closures)",category,str,0.0,1,e2sfca_gauss
+fact_daily_access,catchment_m,Catchment radius d0 (straight-line distance x DETOUR_FACTOR),m,int64,0.0,1,1000
+fact_daily_access,n_hc_closed,Baseline centres closed that day (NEA cleaning / works calendar),count,int64,0.0,28,2
+fact_daily_access,stalls_closed,Cooked-food stalls in those centres,stalls,float64,0.0,142,81.0
+fact_daily_access,closed_hc_keys,"hc_keys of the closed centres, ';'-separated",text,str,8.5,159,HC106;HC129
+fact_daily_access,access_per_1000_all,Access that day for all residents,"stalls / 1,000 residents",float64,0.0,142,1.5685
+fact_daily_access,pop_no_access_all,All residents with no open centre in reach that day,persons,float64,0.0,140,1215383.0907
+fact_daily_access,access_per_1000_hdb,Access that day for HDB residents,"stalls / 1,000 residents",float64,0.0,148,1.5763
+fact_daily_access,pop_no_access_hdb,Hdb residents with no open centre in reach that day,persons,float64,0.0,108,840498.165
+fact_daily_access,access_per_1000_condo,Access that day for condo residents,"stalls / 1,000 residents",float64,0.0,152,1.5942
+fact_daily_access,pop_no_access_condo,Condo residents with no open centre in reach that day,persons,float64,0.0,127,259798.1184
+fact_daily_access,access_per_1000_landed,Access that day for landed residents,"stalls / 1,000 residents",float64,0.0,128,1.172
+fact_daily_access,pop_no_access_landed,Landed residents with no open centre in reach that day,persons,float64,0.0,103,103266.8073
+fact_daily_access,access_per_1000_other,Access that day for other-dwelling residents,"stalls / 1,000 residents",float64,0.0,153,2.9978
+fact_daily_access,pop_no_access_other,Other-dwelling residents with no open centre in reach that day,persons,float64,0.0,75,11820.0
+agg_daily_access_subzone,date,Calendar day,date,str,0.0,365,2026-01-01
+agg_daily_access_subzone,sz_key,"Subzone key: upper-case name, punctuation removed (joins to dim_subzone)",key,str,0.0,241,ADMIRALTY
+agg_daily_access_subzone,access_per_1000,"Population-weighted access in the subzone on that day (headline method, 1 km)","stalls / 1,000 residents",float64,0.0,1212,0.8572
+agg_daily_access_subzone,pop_no_access,Residents with no open hawker centre within the catchment,persons,float64,0.0,426,0.0
+qa_population_conservation,sz_key,"Subzone key: upper-case name, punctuation removed (joins to dim_subzone)",key,str,0.0,332,ADMIRALTY
+qa_population_conservation,dwelling_type,"HDB, CONDO (incl. ECs and apartments), LANDED, OTHER (shophouses, institutions etc.); ALL = every type combined; WORKER = MRT commuters (daytime scenario only)",category,str,0.0,4,CONDO
+qa_population_conservation,census_pop,Residents in the census for this subzone and dwelling type,persons,int64,0.0,395,0
+qa_population_conservation,allocated_pop,Residents allocated to demand points,persons,float64,0.0,397,0.0
+qa_population_conservation,source,"Location source(s) used, '+'-joined",category,str,48.1,3,hdb_block_onemap
+qa_population_conservation,diff,allocated_pop - census_pop (should be 0),persons,float64,0.0,7,0.0
+qa_referential_integrity,table,Table checked,text,str,0.0,4,dim_demand_point
+qa_referential_integrity,fk,Foreign-key column checked,text,str,0.0,1,sz_key
+qa_referential_integrity,rows_with_fk,Rows where the key is filled,count,int64,0.0,4,18461
+qa_referential_integrity,orphans,Rows whose key is missing from the parent table (should be 0),count,int64,0.0,1,0
+data_dictionary,table,Table name,text,str,0.0,20,dim_planning_area
+data_dictionary,grain,What one row represents,text,str,0.0,20,1 row per URA planning area
+data_dictionary,primary_key,"Column(s) that uniquely identify a row, '+'-joined",text,str,0.0,17,pa_key
+data_dictionary,foreign_keys,Columns that join to other tables,text,str,0.0,8,-
+data_dictionary,n_columns,Number of columns,count,int64,0.0,14,10
+data_dictionary,columns,Column names,text,str,0.0,20,"pa_key, planning_area, resident_pop, region, n_subzones, hou"
