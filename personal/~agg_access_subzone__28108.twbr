@@ -1,0 +1,1351 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0912.1023                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='9252e8f4ac764400201aa6d883d448bda93c45389f07702f855837579b677782' _.fcp.WorkbookFingerprinting.true...creator-author-id='9252e8f4ac764400201aa6d883d448bda93c45389f07702f855837579b677782' _.fcp.WorkbookFingerprinting.true...creator-license-type='free' _.fcp.WorkbookFingerprinting.true...creator-machine-id='703b2c1a1ceaf1464274dcc287194c7a1c5562b0cc230183eaa6917bb2589f16' _.fcp.WorkbookFingerprinting.true...license-type='free' _.fcp.WorkbookFingerprinting.true...machine-id='703b2c1a1ceaf1464274dcc287194c7a1c5562b0cc230183eaa6917bb2589f16' locale='en_SG' original-version='18.1' source-build='2026.2.3 (20262.26.0912.1023)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='agg_access_subzone' inline='true' name='federated.024hbrn1dfok8q17vrqsa0u4o5bm' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='agg_access_subzone' name='textscan.0tafml8175kgru1cakdsv06r596b'>
+            <connection class='textscan' directory='C:/Users/natsu/OneDrive/ドキュメント/GitHub/hawker_2sfca/data/processed' filename='agg_access_subzone.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0tafml8175kgru1cakdsv06r596b' name='agg_access_subzone.csv' table='[agg_access_subzone#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_SG' separator=','>
+            <column datatype='string' name='sz_key' ordinal='0' />
+            <column datatype='string' name='dwelling_type' ordinal='1' />
+            <column datatype='real' name='population' ordinal='2' />
+            <column datatype='real' name='pop_65plus' ordinal='3' />
+            <column datatype='real' name='pop_no_access' ordinal='4' />
+            <column datatype='real' name='stall_deficit_vs_national' ordinal='5' />
+            <column datatype='integer' name='n_points' ordinal='6' />
+            <column datatype='real' name='access_per_1000' ordinal='7' />
+            <column datatype='real' name='access_65plus_per_1000' ordinal='8' />
+            <column datatype='real' name='pct_pop_no_access' ordinal='9' />
+            <column datatype='real' name='spar' ordinal='10' />
+            <column datatype='string' name='scenario' ordinal='11' />
+            <column datatype='string' name='method' ordinal='12' />
+            <column datatype='integer' name='catchment_m' ordinal='13' />
+            <column datatype='real' name='national_access_per_1000' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[agg_access_subzone.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_SG&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sz_key</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sz_key]</local-name>
+            <parent-name>[agg_access_subzone.csv]</parent-name>
+            <remote-alias>sz_key</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[agg_access_subzone.csv_E65AA1EAD6E5416A8378BEC948A415CF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dwelling_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dwelling_type]</local-name>
+            <parent-name>[agg_access_subzone.csv]</parent-name>
+            <remote-alias>dwelling_type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[agg_access_subzone.csv_E65AA1EAD6E5416A8378BEC948A415CF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>population</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[population]</local-name>
+            <parent-name>[agg_access_subzone.csv]</parent-name>
+            <remote-alias>population</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[agg_access_subzone.csv_E65AA1EAD6E5416A8378BEC948A415CF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pop_65plus</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pop_65plus]</local-name>
+            <parent-name>[agg_access_subzone.csv]</parent-name>
+            <remote-alias>pop_65plus</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[agg_access_subzone.csv_E65AA1EAD6E5416A8378BEC948A415CF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pop_no_access</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pop_no_access]</local-name>
+            <parent-name>[agg_access_subzone.csv]</parent-name>
+            <remote-alias>pop_no_access</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[agg_access_subzone.csv_E65AA1EAD6E5416A8378BEC948A415CF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stall_deficit_vs_national</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[stall_deficit_vs_national]</local-name>
+            <parent-name>[agg_access_subzone.csv]</parent-name>
+            <remote-alias>stall_deficit_vs_national</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[agg_access_subzone.csv_E65AA1EAD6E5416A8378BEC948A415CF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_points</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[n_points]</local-name>
+            <parent-name>[agg_access_subzone.csv]</parent-name>
+            <remote-alias>n_points</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[agg_access_subzone.csv_E65AA1EAD6E5416A8378BEC948A415CF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>access_per_1000</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[access_per_1000]</local-name>
+            <parent-name>[agg_access_subzone.csv]</parent-name>
+            <remote-alias>access_per_1000</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[agg_access_subzone.csv_E65AA1EAD6E5416A8378BEC948A415CF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>access_65plus_per_1000</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[access_65plus_per_1000]</local-name>
+            <parent-name>[agg_access_subzone.csv]</parent-name>
+            <remote-alias>access_65plus_per_1000</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[agg_access_subzone.csv_E65AA1EAD6E5416A8378BEC948A415CF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pct_pop_no_access</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pct_pop_no_access]</local-name>
+            <parent-name>[agg_access_subzone.csv]</parent-name>
+            <remote-alias>pct_pop_no_access</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[agg_access_subzone.csv_E65AA1EAD6E5416A8378BEC948A415CF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>spar</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[spar]</local-name>
+            <parent-name>[agg_access_subzone.csv]</parent-name>
+            <remote-alias>spar</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[agg_access_subzone.csv_E65AA1EAD6E5416A8378BEC948A415CF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>scenario</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[scenario]</local-name>
+            <parent-name>[agg_access_subzone.csv]</parent-name>
+            <remote-alias>scenario</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[agg_access_subzone.csv_E65AA1EAD6E5416A8378BEC948A415CF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>method</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[method]</local-name>
+            <parent-name>[agg_access_subzone.csv]</parent-name>
+            <remote-alias>method</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[agg_access_subzone.csv_E65AA1EAD6E5416A8378BEC948A415CF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>catchment_m</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[catchment_m]</local-name>
+            <parent-name>[agg_access_subzone.csv]</parent-name>
+            <remote-alias>catchment_m</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[agg_access_subzone.csv_E65AA1EAD6E5416A8378BEC948A415CF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>national_access_per_1000</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[national_access_per_1000]</local-name>
+            <parent-name>[agg_access_subzone.csv]</parent-name>
+            <remote-alias>national_access_per_1000</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[agg_access_subzone.csv_E65AA1EAD6E5416A8378BEC948A415CF]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='index' datatype='integer' name='[Calculation_1631725314990080]' role='measure' type='ordinal'>
+        <calculation class='tableau' formula='index()'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='agg_access_subzone.csv' datatype='table' name='[__tableau_internal_object_id__].[agg_access_subzone.csv_E65AA1EAD6E5416A8378BEC948A415CF]' role='measure' type='quantitative' />
+      <column caption='Access 65Plus Per 1000' datatype='real' name='[access_65plus_per_1000]' role='measure' type='quantitative' />
+      <column caption='Access Per 1000' datatype='real' name='[access_per_1000]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Catchment M' datatype='integer' name='[catchment_m]' role='dimension' type='ordinal' />
+      <column caption='Dwelling Type' datatype='string' name='[dwelling_type]' role='dimension' type='nominal' />
+      <column caption='Method' datatype='string' name='[method]' role='dimension' type='nominal' />
+      <column caption='N Points' datatype='integer' name='[n_points]' role='measure' type='quantitative' />
+      <column caption='National Access Per 1000' datatype='real' name='[national_access_per_1000]' role='measure' type='quantitative' />
+      <column caption='Pct Pop No Access' datatype='real' name='[pct_pop_no_access]' role='measure' type='quantitative' />
+      <column caption='Pop 65Plus' datatype='real' name='[pop_65plus]' role='measure' type='quantitative' />
+      <column caption='Pop No Access' datatype='real' name='[pop_no_access]' role='measure' type='quantitative' />
+      <column caption='Population' datatype='real' name='[population]' role='measure' type='quantitative' />
+      <column caption='Scenario' datatype='string' name='[scenario]' role='dimension' type='nominal' />
+      <column caption='Spar' datatype='real' name='[spar]' role='measure' type='quantitative' />
+      <column caption='Stall Deficit Vs National' datatype='real' name='[stall_deficit_vs_national]' role='measure' type='quantitative' />
+      <column caption='Sz Key' datatype='string' name='[sz_key]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;シンガポール&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='agg_access_subzone.csv' id='agg_access_subzone.csv_E65AA1EAD6E5416A8378BEC948A415CF'>
+            <properties context=''>
+              <relation connection='textscan.0tafml8175kgru1cakdsv06r596b' name='agg_access_subzone.csv' table='[agg_access_subzone#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_SG' separator=','>
+                  <column datatype='string' name='sz_key' ordinal='0' />
+                  <column datatype='string' name='dwelling_type' ordinal='1' />
+                  <column datatype='real' name='population' ordinal='2' />
+                  <column datatype='real' name='pop_65plus' ordinal='3' />
+                  <column datatype='real' name='pop_no_access' ordinal='4' />
+                  <column datatype='real' name='stall_deficit_vs_national' ordinal='5' />
+                  <column datatype='integer' name='n_points' ordinal='6' />
+                  <column datatype='real' name='access_per_1000' ordinal='7' />
+                  <column datatype='real' name='access_65plus_per_1000' ordinal='8' />
+                  <column datatype='real' name='pct_pop_no_access' ordinal='9' />
+                  <column datatype='real' name='spar' ordinal='10' />
+                  <column datatype='string' name='scenario' ordinal='11' />
+                  <column datatype='string' name='method' ordinal='12' />
+                  <column datatype='integer' name='catchment_m' ordinal='13' />
+                  <column datatype='real' name='national_access_per_1000' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.024hbrn1dfok8q17vrqsa0u4o5bm'>
+      <datasources>
+        <datasource caption='agg_access_subzone' name='federated.024hbrn1dfok8q17vrqsa0u4o5bm' />
+      </datasources>
+      <datasource-dependencies datasource='federated.024hbrn1dfok8q17vrqsa0u4o5bm'>
+        <column caption='Dwelling Type' datatype='string' name='[dwelling_type]' role='dimension' type='nominal' />
+        <column-instance column='[dwelling_type]' derivation='None' name='[none:dwelling_type:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:dwelling_type:nk]'>
+        <groupfilter function='member' level='[none:dwelling_type:nk]' member='&quot;ALL&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Catchment'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Catchment&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='agg_access_subzone' name='federated.024hbrn1dfok8q17vrqsa0u4o5bm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.024hbrn1dfok8q17vrqsa0u4o5bm'>
+            <column aggregation='Sum' caption='Catchment M' datatype='integer' name='[catchment_m]' role='dimension' type='ordinal' />
+            <column caption='Dwelling Type' datatype='string' name='[dwelling_type]' role='dimension' type='nominal' />
+            <column caption='Method' datatype='string' name='[method]' role='dimension' type='nominal' />
+            <column-instance column='[catchment_m]' derivation='None' name='[none:catchment_m:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[dwelling_type]' derivation='None' name='[none:dwelling_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[method]' derivation='None' name='[none:method:nk]' pivot='key' type='nominal' />
+            <column-instance column='[scenario]' derivation='None' name='[none:scenario:nk]' pivot='key' type='nominal' />
+            <column-instance column='[sz_key]' derivation='None' name='[none:sz_key:nk]' pivot='key' type='nominal' />
+            <column caption='Population' datatype='real' name='[population]' role='measure' type='quantitative' />
+            <column caption='Scenario' datatype='string' name='[scenario]' role='dimension' type='nominal' />
+            <column caption='Spar' datatype='real' name='[spar]' role='measure' type='quantitative' />
+            <column-instance column='[population]' derivation='Sum' name='[sum:population:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[spar]' derivation='Sum' name='[sum:spar:qk]' pivot='key' type='quantitative' />
+            <column caption='Sz Key' datatype='string' name='[sz_key]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:method:nk]'>
+            <groupfilter function='member' level='[none:method:nk]' member='&quot;2sfca&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:scenario:nk]'>
+            <groupfilter function='member' level='[none:scenario:nk]' member='&quot;baseline&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:sz_key:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:spar:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:dwelling_type:nk]</column>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:method:nk]</column>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:scenario:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:spar:qk]' />
+              <tooltip column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:population:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:catchment_m:ok] * [federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:spar:qk])</rows>
+        <cols>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:sz_key:nk]</cols>
+      </table>
+      <simple-id uuid='{44B0E715-3D82-4DF8-A54A-222A6F1B31F6}' />
+    </worksheet>
+    <worksheet name='Catchment (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Catchment (2)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='agg_access_subzone' name='federated.024hbrn1dfok8q17vrqsa0u4o5bm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.024hbrn1dfok8q17vrqsa0u4o5bm'>
+            <column aggregation='Sum' caption='Catchment M' datatype='integer' name='[catchment_m]' role='dimension' type='ordinal' />
+            <column caption='Dwelling Type' datatype='string' name='[dwelling_type]' role='dimension' type='nominal' />
+            <column caption='Method' datatype='string' name='[method]' role='dimension' type='nominal' />
+            <column-instance column='[catchment_m]' derivation='None' name='[none:catchment_m:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[dwelling_type]' derivation='None' name='[none:dwelling_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[method]' derivation='None' name='[none:method:nk]' pivot='key' type='nominal' />
+            <column-instance column='[scenario]' derivation='None' name='[none:scenario:nk]' pivot='key' type='nominal' />
+            <column-instance column='[sz_key]' derivation='None' name='[none:sz_key:nk]' pivot='key' type='nominal' />
+            <column caption='Scenario' datatype='string' name='[scenario]' role='dimension' type='nominal' />
+            <column caption='Spar' datatype='real' name='[spar]' role='measure' type='quantitative' />
+            <column-instance column='[spar]' derivation='Sum' name='[sum:spar:qk]' pivot='key' type='quantitative' />
+            <column caption='Sz Key' datatype='string' name='[sz_key]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:method:nk]'>
+            <groupfilter function='member' level='[none:method:nk]' member='&quot;2sfca&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:scenario:nk]'>
+            <groupfilter function='member' level='[none:scenario:nk]' member='&quot;baseline&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:dwelling_type:nk]</column>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:method:nk]</column>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:scenario:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:sz_key:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:spar:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:spar:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:catchment_m:ok]</rows>
+        <cols>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:spar:qk]</cols>
+      </table>
+      <simple-id uuid='{05920071-199A-467F-86AC-1848F987A7C7}' />
+    </worksheet>
+    <worksheet name='Method'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Method&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='agg_access_subzone' name='federated.024hbrn1dfok8q17vrqsa0u4o5bm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.024hbrn1dfok8q17vrqsa0u4o5bm'>
+            <column aggregation='Sum' caption='Catchment M' datatype='integer' name='[catchment_m]' role='dimension' type='ordinal' />
+            <column caption='Dwelling Type' datatype='string' name='[dwelling_type]' role='dimension' type='nominal' />
+            <column caption='Method' datatype='string' name='[method]' role='dimension' type='nominal' />
+            <column-instance column='[catchment_m]' derivation='None' name='[none:catchment_m:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[dwelling_type]' derivation='None' name='[none:dwelling_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[method]' derivation='None' name='[none:method:nk]' pivot='key' type='nominal' />
+            <column-instance column='[scenario]' derivation='None' name='[none:scenario:nk]' pivot='key' type='nominal' />
+            <column-instance column='[sz_key]' derivation='None' name='[none:sz_key:nk]' pivot='key' type='nominal' />
+            <column caption='Population' datatype='real' name='[population]' role='measure' type='quantitative' />
+            <column caption='Scenario' datatype='string' name='[scenario]' role='dimension' type='nominal' />
+            <column caption='Spar' datatype='real' name='[spar]' role='measure' type='quantitative' />
+            <column-instance column='[population]' derivation='Sum' name='[sum:population:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[spar]' derivation='Sum' name='[sum:spar:qk]' pivot='key' type='quantitative' />
+            <column caption='Sz Key' datatype='string' name='[sz_key]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:catchment_m:ok]'>
+            <groupfilter function='member' level='[none:catchment_m:ok]' member='500' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:scenario:nk]'>
+            <groupfilter function='member' level='[none:scenario:nk]' member='&quot;baseline&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:sz_key:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:spar:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:dwelling_type:nk]</column>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:scenario:nk]</column>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:catchment_m:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <tooltip column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:population:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:method:nk] * [federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:spar:qk])</rows>
+        <cols>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:sz_key:nk]</cols>
+      </table>
+      <simple-id uuid='{E9F1FB61-A7A7-462F-A7AA-DB5A5BC91A9D}' />
+    </worksheet>
+    <worksheet name='Method (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Method (2)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='agg_access_subzone' name='federated.024hbrn1dfok8q17vrqsa0u4o5bm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.024hbrn1dfok8q17vrqsa0u4o5bm'>
+            <column aggregation='Sum' caption='Catchment M' datatype='integer' name='[catchment_m]' role='dimension' type='ordinal' />
+            <column caption='Dwelling Type' datatype='string' name='[dwelling_type]' role='dimension' type='nominal' />
+            <column caption='Method' datatype='string' name='[method]' role='dimension' type='nominal' />
+            <column-instance column='[catchment_m]' derivation='None' name='[none:catchment_m:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[dwelling_type]' derivation='None' name='[none:dwelling_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[method]' derivation='None' name='[none:method:nk]' pivot='key' type='nominal' />
+            <column-instance column='[scenario]' derivation='None' name='[none:scenario:nk]' pivot='key' type='nominal' />
+            <column-instance column='[sz_key]' derivation='None' name='[none:sz_key:nk]' pivot='key' type='nominal' />
+            <column caption='Scenario' datatype='string' name='[scenario]' role='dimension' type='nominal' />
+            <column caption='Spar' datatype='real' name='[spar]' role='measure' type='quantitative' />
+            <column-instance column='[spar]' derivation='Sum' name='[sum:spar:qk]' pivot='key' type='quantitative' />
+            <column caption='Sz Key' datatype='string' name='[sz_key]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:catchment_m:ok]'>
+            <groupfilter function='member' level='[none:catchment_m:ok]' member='500' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:scenario:nk]'>
+            <groupfilter function='member' level='[none:scenario:nk]' member='&quot;baseline&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:dwelling_type:nk]</column>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:scenario:nk]</column>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:catchment_m:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:sz_key:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:spar:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:spar:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:method:nk]</rows>
+        <cols>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:spar:qk]</cols>
+      </table>
+      <simple-id uuid='{191B5A3A-0468-4CAF-BC4D-72433E388C4D}' />
+    </worksheet>
+    <worksheet name='Spar'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Spar&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='agg_access_subzone' name='federated.024hbrn1dfok8q17vrqsa0u4o5bm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.024hbrn1dfok8q17vrqsa0u4o5bm'>
+            <column aggregation='Sum' caption='Catchment M' datatype='integer' name='[catchment_m]' role='dimension' type='ordinal' />
+            <column caption='Dwelling Type' datatype='string' name='[dwelling_type]' role='dimension' type='nominal' />
+            <column caption='Method' datatype='string' name='[method]' role='dimension' type='nominal' />
+            <column-instance column='[catchment_m]' derivation='None' name='[none:catchment_m:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[dwelling_type]' derivation='None' name='[none:dwelling_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[method]' derivation='None' name='[none:method:nk]' pivot='key' type='nominal' />
+            <column-instance column='[scenario]' derivation='None' name='[none:scenario:nk]' pivot='key' type='nominal' />
+            <column-instance column='[sz_key]' derivation='None' name='[none:sz_key:nk]' pivot='key' type='nominal' />
+            <column caption='Population' datatype='real' name='[population]' role='measure' type='quantitative' />
+            <column caption='Scenario' datatype='string' name='[scenario]' role='dimension' type='nominal' />
+            <column caption='Spar' datatype='real' name='[spar]' role='measure' type='quantitative' />
+            <column-instance column='[population]' derivation='Sum' name='[sum:population:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[spar]' derivation='Sum' name='[sum:spar:qk]' pivot='key' type='quantitative' />
+            <column caption='Sz Key' datatype='string' name='[sz_key]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:catchment_m:ok]'>
+            <groupfilter function='member' level='[none:catchment_m:ok]' member='500' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:method:nk]'>
+            <groupfilter function='member' level='[none:method:nk]' member='&quot;2sfca&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:scenario:nk]'>
+            <groupfilter function='member' level='[none:scenario:nk]' member='&quot;baseline&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:dwelling_type:nk]</column>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:method:nk]</column>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:scenario:nk]</column>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:catchment_m:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:population:qk]' />
+              <lod column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:sz_key:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:spar:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:spar:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:spar:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{6A28F4D9-9D83-4296-918F-F80F0EE1CB1A}' />
+    </worksheet>
+    <worksheet name='Spar by Sz'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Spar by Sz</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='agg_access_subzone' name='federated.024hbrn1dfok8q17vrqsa0u4o5bm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.024hbrn1dfok8q17vrqsa0u4o5bm'>
+            <column aggregation='Sum' caption='Catchment M' datatype='integer' name='[catchment_m]' role='dimension' type='ordinal' />
+            <column caption='Dwelling Type' datatype='string' name='[dwelling_type]' role='dimension' type='nominal' />
+            <column caption='Method' datatype='string' name='[method]' role='dimension' type='nominal' />
+            <column-instance column='[catchment_m]' derivation='None' name='[none:catchment_m:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[dwelling_type]' derivation='None' name='[none:dwelling_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[method]' derivation='None' name='[none:method:nk]' pivot='key' type='nominal' />
+            <column-instance column='[scenario]' derivation='None' name='[none:scenario:nk]' pivot='key' type='nominal' />
+            <column-instance column='[sz_key]' derivation='None' name='[none:sz_key:nk]' pivot='key' type='nominal' />
+            <column caption='Population' datatype='real' name='[population]' role='measure' type='quantitative' />
+            <column caption='Scenario' datatype='string' name='[scenario]' role='dimension' type='nominal' />
+            <column caption='Spar' datatype='real' name='[spar]' role='measure' type='quantitative' />
+            <column-instance column='[population]' derivation='Sum' name='[sum:population:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[spar]' derivation='Sum' name='[sum:spar:qk]' pivot='key' type='quantitative' />
+            <column caption='Sz Key' datatype='string' name='[sz_key]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:catchment_m:ok]'>
+            <groupfilter function='member' level='[none:catchment_m:ok]' member='500' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:method:nk]'>
+            <groupfilter function='member' level='[none:method:nk]' member='&quot;2sfca&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:scenario:nk]'>
+            <groupfilter function='member' level='[none:scenario:nk]' member='&quot;baseline&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:sz_key:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:spar:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:dwelling_type:nk]</column>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:method:nk]</column>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:scenario:nk]</column>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:catchment_m:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:sz_key:nk]' value='280' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:spar:qk]' />
+              <tooltip column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:population:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:sz_key:nk]</rows>
+        <cols>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:spar:qk]</cols>
+      </table>
+      <simple-id uuid='{04C9FFF7-6055-498E-8762-19072CC2A69A}' />
+    </worksheet>
+    <worksheet name='Spar vs Pop no access'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Spar vs Population</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='agg_access_subzone' name='federated.024hbrn1dfok8q17vrqsa0u4o5bm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.024hbrn1dfok8q17vrqsa0u4o5bm'>
+            <column caption='index' datatype='integer' name='[Calculation_1631725314990080]' role='measure' type='ordinal'>
+              <calculation class='tableau' formula='index()'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column aggregation='Sum' caption='Catchment M' datatype='integer' name='[catchment_m]' role='dimension' type='ordinal' />
+            <column caption='Dwelling Type' datatype='string' name='[dwelling_type]' role='dimension' type='nominal' />
+            <column caption='Method' datatype='string' name='[method]' role='dimension' type='nominal' />
+            <column-instance column='[catchment_m]' derivation='None' name='[none:catchment_m:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[dwelling_type]' derivation='None' name='[none:dwelling_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[method]' derivation='None' name='[none:method:nk]' pivot='key' type='nominal' />
+            <column-instance column='[scenario]' derivation='None' name='[none:scenario:nk]' pivot='key' type='nominal' />
+            <column-instance column='[sz_key]' derivation='None' name='[none:sz_key:nk]' pivot='key' type='nominal' />
+            <column caption='Pct Pop No Access' datatype='real' name='[pct_pop_no_access]' role='measure' type='quantitative' />
+            <column caption='Population' datatype='real' name='[population]' role='measure' type='quantitative' />
+            <column caption='Scenario' datatype='string' name='[scenario]' role='dimension' type='nominal' />
+            <column caption='Spar' datatype='real' name='[spar]' role='measure' type='quantitative' />
+            <column-instance column='[pct_pop_no_access]' derivation='Sum' name='[sum:pct_pop_no_access:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[population]' derivation='Sum' name='[sum:population:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[spar]' derivation='Sum' name='[sum:spar:qk]' pivot='key' type='quantitative' />
+            <column caption='Sz Key' datatype='string' name='[sz_key]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1631725314990080]' derivation='User' name='[usr:Calculation_1631725314990080:ok]' pivot='key' type='ordinal'>
+              <table-calc ordering-type='Columns' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:catchment_m:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:catchment_m:ok]' member='500' />
+              <groupfilter function='member' level='[none:catchment_m:ok]' member='1000' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:method:nk]'>
+            <groupfilter function='member' level='[none:method:nk]' member='&quot;2sfca&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:scenario:nk]'>
+            <groupfilter function='member' level='[none:scenario:nk]' member='&quot;baseline&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:sz_key:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:pct_pop_no_access:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:dwelling_type:nk]</column>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:method:nk]</column>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:scenario:nk]</column>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:catchment_m:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:pct_pop_no_access:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:spar:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:population:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.024hbrn1dfok8q17vrqsa0u4o5bm].[usr:Calculation_1631725314990080:ok] / [federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:sz_key:nk])</rows>
+        <cols>([federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:pct_pop_no_access:qk] + ([federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:spar:qk] + [federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:population:qk]))</cols>
+      </table>
+      <simple-id uuid='{3DFCAFC4-24C5-4A83-A63C-D56E6AD12C25}' />
+    </worksheet>
+    <worksheet name='Spar vs Pop no access (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Spar vs Population</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='agg_access_subzone' name='federated.024hbrn1dfok8q17vrqsa0u4o5bm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.024hbrn1dfok8q17vrqsa0u4o5bm'>
+            <column aggregation='Sum' caption='Catchment M' datatype='integer' name='[catchment_m]' role='dimension' type='ordinal' />
+            <column caption='Dwelling Type' datatype='string' name='[dwelling_type]' role='dimension' type='nominal' />
+            <column caption='Method' datatype='string' name='[method]' role='dimension' type='nominal' />
+            <column-instance column='[catchment_m]' derivation='None' name='[none:catchment_m:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[dwelling_type]' derivation='None' name='[none:dwelling_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[method]' derivation='None' name='[none:method:nk]' pivot='key' type='nominal' />
+            <column-instance column='[scenario]' derivation='None' name='[none:scenario:nk]' pivot='key' type='nominal' />
+            <column-instance column='[sz_key]' derivation='None' name='[none:sz_key:nk]' pivot='key' type='nominal' />
+            <column caption='Pct Pop No Access' datatype='real' name='[pct_pop_no_access]' role='measure' type='quantitative' />
+            <column caption='Population' datatype='real' name='[population]' role='measure' type='quantitative' />
+            <column caption='Scenario' datatype='string' name='[scenario]' role='dimension' type='nominal' />
+            <column caption='Spar' datatype='real' name='[spar]' role='measure' type='quantitative' />
+            <column-instance column='[pct_pop_no_access]' derivation='Sum' name='[sum:pct_pop_no_access:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[population]' derivation='Sum' name='[sum:population:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[spar]' derivation='Sum' name='[sum:spar:qk]' pivot='key' type='quantitative' />
+            <column caption='Sz Key' datatype='string' name='[sz_key]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:catchment_m:ok]'>
+            <groupfilter function='member' level='[none:catchment_m:ok]' member='500' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:method:nk]'>
+            <groupfilter function='member' level='[none:method:nk]' member='&quot;2sfca&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:scenario:nk]'>
+            <groupfilter function='member' level='[none:scenario:nk]' member='&quot;baseline&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:dwelling_type:nk]</column>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:method:nk]</column>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:scenario:nk]</column>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:catchment_m:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:pct_pop_no_access:qk]' field-type='quantitative' reverse='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:population:qk]' />
+              <lod column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:sz_key:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:pct_pop_no_access:qk]</rows>
+        <cols>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:spar:qk]</cols>
+      </table>
+      <simple-id uuid='{442E5874-C007-45E1-907D-AFD75A123DC5}' />
+    </worksheet>
+    <worksheet name='Spar vs Population'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Spar vs Population</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='agg_access_subzone' name='federated.024hbrn1dfok8q17vrqsa0u4o5bm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.024hbrn1dfok8q17vrqsa0u4o5bm'>
+            <column aggregation='Sum' caption='Catchment M' datatype='integer' name='[catchment_m]' role='dimension' type='ordinal' />
+            <column caption='Dwelling Type' datatype='string' name='[dwelling_type]' role='dimension' type='nominal' />
+            <column caption='Method' datatype='string' name='[method]' role='dimension' type='nominal' />
+            <column-instance column='[catchment_m]' derivation='None' name='[none:catchment_m:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[dwelling_type]' derivation='None' name='[none:dwelling_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[method]' derivation='None' name='[none:method:nk]' pivot='key' type='nominal' />
+            <column-instance column='[scenario]' derivation='None' name='[none:scenario:nk]' pivot='key' type='nominal' />
+            <column-instance column='[sz_key]' derivation='None' name='[none:sz_key:nk]' pivot='key' type='nominal' />
+            <column caption='Population' datatype='real' name='[population]' role='measure' type='quantitative' />
+            <column caption='Scenario' datatype='string' name='[scenario]' role='dimension' type='nominal' />
+            <column caption='Spar' datatype='real' name='[spar]' role='measure' type='quantitative' />
+            <column-instance column='[population]' derivation='Sum' name='[sum:population:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[spar]' derivation='Sum' name='[sum:spar:qk]' pivot='key' type='quantitative' />
+            <column caption='Sz Key' datatype='string' name='[sz_key]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:catchment_m:ok]'>
+            <groupfilter function='member' level='[none:catchment_m:ok]' member='500' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:method:nk]'>
+            <groupfilter function='member' level='[none:method:nk]' member='&quot;2sfca&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:scenario:nk]'>
+            <groupfilter function='member' level='[none:scenario:nk]' member='&quot;baseline&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:dwelling_type:nk]</column>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:method:nk]</column>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:scenario:nk]</column>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:catchment_m:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='title'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:sz_key:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.813093900680542' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='mark-color' value='#4e79a7' />
+                <format attr='shape' value='circle' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:population:qk]</rows>
+        <cols>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:spar:qk]</cols>
+      </table>
+      <simple-id uuid='{73D246CC-F85B-489D-8666-062C0820B9A2}' />
+    </worksheet>
+    <worksheet name='シート 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5109138A-97A5-4125-A89C-BEB7CF192EF1}' />
+    </worksheet>
+    <worksheet name='シート 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='agg_access_subzone' name='federated.024hbrn1dfok8q17vrqsa0u4o5bm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.024hbrn1dfok8q17vrqsa0u4o5bm'>
+            <column aggregation='Sum' caption='Catchment M' datatype='integer' name='[catchment_m]' role='dimension' type='ordinal' />
+            <column caption='Dwelling Type' datatype='string' name='[dwelling_type]' role='dimension' type='nominal' />
+            <column caption='Method' datatype='string' name='[method]' role='dimension' type='nominal' />
+            <column-instance column='[catchment_m]' derivation='None' name='[none:catchment_m:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[dwelling_type]' derivation='None' name='[none:dwelling_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[method]' derivation='None' name='[none:method:nk]' pivot='key' type='nominal' />
+            <column-instance column='[scenario]' derivation='None' name='[none:scenario:nk]' pivot='key' type='nominal' />
+            <column-instance column='[sz_key]' derivation='None' name='[none:sz_key:nk]' pivot='key' type='nominal' />
+            <column caption='Population' datatype='real' name='[population]' role='measure' type='quantitative' />
+            <column caption='Scenario' datatype='string' name='[scenario]' role='dimension' type='nominal' />
+            <column caption='Spar' datatype='real' name='[spar]' role='measure' type='quantitative' />
+            <column-instance column='[population]' derivation='Sum' name='[sum:population:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[spar]' derivation='Sum' name='[sum:spar:qk]' pivot='key' type='quantitative' />
+            <column caption='Sz Key' datatype='string' name='[sz_key]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:catchment_m:ok]'>
+            <groupfilter function='member' level='[none:catchment_m:ok]' member='500' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:method:nk]'>
+            <groupfilter function='member' level='[none:method:nk]' member='&quot;2sfca&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:scenario:nk]'>
+            <groupfilter function='member' level='[none:scenario:nk]' member='&quot;baseline&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:dwelling_type:nk]</column>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:method:nk]</column>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:scenario:nk]</column>
+            <column>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:catchment_m:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:sz_key:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:population:qk]</rows>
+        <cols>[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:spar:qk]</cols>
+      </table>
+      <simple-id uuid='{46AA0719-4D0A-4263-8690-CA0AE746BA84}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='37'>
+    <window class='worksheet' name='シート 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0138125C-5043-48A6-8628-C8CA3D8117C9}' />
+    </window>
+    <window class='worksheet' name='Spar'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:population:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{41A803C3-1825-4031-B09A-83CB7F1E04C8}' />
+    </window>
+    <window class='worksheet' name='Spar by Sz'>
+      <cards>
+        <edge name='left'>
+          <strip size='238'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{5B8D3DA2-C3A4-4AD3-A10F-45A5CD88B244}' />
+    </window>
+    <window class='worksheet' name='Spar vs Population'>
+      <cards>
+        <edge name='left'>
+          <strip size='256'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{901FCD8C-ECC6-4DE9-A866-CC2DD3EB6BEE}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Catchment'>
+      <cards>
+        <edge name='left'>
+          <strip size='237'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{1B1106E2-39CB-47C1-AE6D-601CBECB56D2}' />
+    </window>
+    <window class='worksheet' name='Catchment (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='236'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{57356698-32DC-4098-8705-02A42746DF16}' />
+    </window>
+    <window class='worksheet' name='Method'>
+      <cards>
+        <edge name='left'>
+          <strip size='236'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{7FB9CA9F-CE54-4084-A39F-A95EACB60534}' />
+    </window>
+    <window class='worksheet' name='Method (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='236'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{AD155E7B-E93A-463F-8257-C179197A16FE}' />
+    </window>
+    <window class='worksheet' name='Spar vs Pop no access'>
+      <cards>
+        <edge name='left'>
+          <strip size='236'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[none:catchment_m:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D8E86245-BB66-4E92-BE52-2ACDCB27B132}' />
+    </window>
+    <window class='worksheet' name='Spar vs Pop no access (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='236'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.024hbrn1dfok8q17vrqsa0u4o5bm].[sum:population:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{E44C8EE7-B3E6-42E1-9D83-9E6803325500}' />
+    </window>
+    <window class='worksheet' name='シート 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4ABCAA8F-22B5-4D24-BB74-2CD9CE809D2D}' />
+    </window>
+  </windows>
+</workbook>
