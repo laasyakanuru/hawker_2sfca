@@ -1,0 +1,10 @@
+catchment_m,cluster,cluster_name,w_spar
+500,0,Small-flat / older HDB areas,2.5404
+500,1,Larger-flat / lower-elderly HDB areas,0.3608
+500,2,Private-housing areas,1.3026
+1000,0,Small-flat / older HDB areas,2.3707
+1000,1,Larger-flat / lower-elderly HDB areas,0.3799
+1000,2,Private-housing areas,1.4
+1500,0,Small-flat / older HDB areas,2.1559
+1500,1,Larger-flat / lower-elderly HDB areas,0.4167
+1500,2,Private-housing areas,1.4647

@@ -1,0 +1,4 @@
+cluster,cluster_name,n_subzones,total_resident_pop,mean_hdb_share,mean_hdb_small_flat_share,mean_pct_elderly,w_access_per_1000_1000m,w_spar_1000m,w_pct_pop_no_access_1000m,total_stall_deficit_vs_national,pct_pop_spar_lt_0_8
+0,Larger-flat / lower-elderly HDB areas,80,2478940,0.845,0.1429,0.164,0.5679,0.3577,37.2,2881.28,90.97
+1,Small-flat / older HDB areas,69,1277960,0.8402,0.4765,0.2615,3.4831,2.1937,7.86,371.86,20.93
+2,Private-housing areas,63,436200,0.027,0.0193,0.1573,1.515,0.9542,41.56,408.32,64.13

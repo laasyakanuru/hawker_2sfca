@@ -23,7 +23,26 @@ DATA = Path(os.getenv("HAWKER_DATA_DIR", ROOT / "data"))
 EXTERNAL = DATA / "external"  # API downloads + caches (safe to delete & re-fetch)
 INTERIM = DATA / "interim"    # cleaned single-source tables
 PROCESSED = DATA / "processed"  # final keyed tables + 2SFCA outputs
-for _p in (RAW, EXTERNAL, INTERIM, PROCESSED):
+
+# --------------------------------------------------------------------------
+# K-means clustering outputs (separate from the shared pipeline tables above).
+# Two specifications are kept side by side:
+#   final_pop500  = PRIMARY analysis (resident_pop>=500, pop_hdb==0 -> dropped, n=158)
+#   legacy_pop1000 = earlier/sensitivity analysis (resident_pop>=1000, n=212)
+# Shared pipeline inputs (fact_subzone_population.csv, agg_access_subzone.csv,
+# dim_subzone.csv, ...) stay in PROCESSED and are NOT moved.
+# --------------------------------------------------------------------------
+CLUSTERING = PROCESSED / "clustering"
+CLUSTERING_FINAL = CLUSTERING / "final_pop500"      # data CSVs, primary spec
+CLUSTERING_LEGACY = CLUSTERING / "legacy_pop1000"   # data CSVs, legacy spec
+OUTPUTS = ROOT / "outputs"
+OUTPUTS_CLUSTERING = OUTPUTS / "clustering"
+OUTPUTS_CLUSTERING_FINAL = OUTPUTS_CLUSTERING / "final_pop500"      # figures, primary
+OUTPUTS_CLUSTERING_LEGACY = OUTPUTS_CLUSTERING / "legacy_pop1000"   # figures, legacy
+
+for _p in (RAW, EXTERNAL, INTERIM, PROCESSED,
+           CLUSTERING_FINAL, CLUSTERING_LEGACY,
+           OUTPUTS_CLUSTERING_FINAL, OUTPUTS_CLUSTERING_LEGACY):
     _p.mkdir(parents=True, exist_ok=True)
 
 RAW_FILES = {
