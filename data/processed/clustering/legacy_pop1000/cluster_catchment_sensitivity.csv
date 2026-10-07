@@ -1,0 +1,10 @@
+catchment_m,cluster,cluster_name,n_subzones,pop,w_access_per_1000,w_spar,w_pct_pop_no_access,pct_pop_spar_lt_1_0,pct_pop_spar_lt_0_8
+500,0,Larger-flat / lower-elderly HDB areas,80,2479080,0.5325,0.3354,77.95,92.85,91.04
+500,1,Small-flat / older HDB areas,69,1278070,3.6253,2.2832,34.21,28.99,26.27
+500,2,Private-housing areas,63,436230,1.233,0.7766,83.6,77.94,75.61
+1000,0,Larger-flat / lower-elderly HDB areas,80,2479080,0.5679,0.3577,37.2,93.07,90.97
+1000,1,Small-flat / older HDB areas,69,1278070,3.4831,2.1937,7.86,26.9,20.93
+1000,2,Private-housing areas,63,436230,1.515,0.9542,41.56,69.69,64.13
+1500,0,Larger-flat / lower-elderly HDB areas,80,2479080,0.6354,0.4002,15.17,91.96,90.07
+1500,1,Small-flat / older HDB areas,69,1278070,3.2635,2.0554,1.74,34.42,13.88
+1500,2,Private-housing areas,63,436230,1.7961,1.1312,20.1,62.82,50.76

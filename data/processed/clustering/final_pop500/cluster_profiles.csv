@@ -1,0 +1,4 @@
+cluster,cluster_name,n_subzones,total_resident_pop,mean_hdb_share,mean_hdb_small_flat_share,mean_pct_elderly
+0,Small-flat / older HDB areas,57,908800,0.8963,0.504,0.2715
+1,Larger-flat / lower-elderly HDB areas,71,2349180,0.884,0.1462,0.1599
+2,Private-housing areas,30,592120,0.467,0.2462,0.2002

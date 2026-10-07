@@ -1,0 +1,4 @@
+cluster,cluster_name,n_subzones,n_subzones_with_access,total_resident_pop,access_pop_matched,w_mean_access_per_1000,w_mean_spar,w_mean_pct_pop_no_access,w_mean_access_65plus_per_1000,total_stall_deficit_vs_national,pct_pop_spar_lt_1_0,pct_pop_spar_lt_0_8,median_spar,median_access_per_1000
+0,Larger-flat / lower-elderly HDB areas,80,80,2478940,2479080,0.5679,0.3577,37.199,0.5679,2881.2834,93.07,90.97,0.2094,0.3326
+1,Small-flat / older HDB areas,69,69,1277960,1278070,3.4831,2.1937,7.8647,3.4831,371.8611,26.9,20.93,1.9658,3.1213
+2,Private-housing areas,63,63,436200,436230,1.515,0.9542,41.5585,1.515,408.3192,69.69,64.13,0.5449,0.8651
