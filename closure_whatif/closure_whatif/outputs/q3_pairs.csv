@@ -1,0 +1,24 @@
+rank,hc_a,hc_b,centre_a,centre_b,subzones,distance_between_m,residents_relying_on_pair,elderly_65plus,days_closed_together_2026,dates_closed_together,resident_days_lost
+1,HC080,HC002,Jurong East Ave 1 Blk 347 (Yuhua Market and Hawker Centre),Jurong West Street 52 Blk 505,Hong Kah,1548,10050,2325,6,"08 Jun, 09 Jun, 14 Sep, 15 Sep, 14 Dec, 15 Dec",60303
+2,HC049,HC079,Boon Lay Place Blk 221A/B (Boon Lay Place Market and Food Village),Jurong West Hawker Centre,Jurong West Central,1786,9083,1350,6,"23 Mar, 24 Mar, 22 Jun, 23 Jun, 21 Sep, 22 Sep",54495
+3,HC062,HC061,Clementi Ave 3 Blk 448,Clementi Ave 2 Blk 353 (Clementi Ave 2 Market/Cooked Food Centre),"Clementi North, Clementi Woods",709,20569,4859,2,"08 Jun, 09 Jun",41138
+4,HC040,HC033,Ang Mo Kio Street 22 Blk 226H (Kebun Baru Food Centre),Ang Mo Kio Ave 1 Blk 226D (Kebun Baru Market and Food Centre),Upper Thomson,106,3641,815,9,"09 Mar, 10 Mar, 11 Mar, 01 Jun, 02 Jun, 14 Sep, 15 Sep, 14 Dec, 15 Dec",32769
+5,HC014,HC048,Queen Street Blk 270 (Albert Centre),Buffalo Road Blk 665 (Tekka Centre/Zhu Jiao Market),"Mount Emily, Victoria",686,2909,410,6,"30 Mar, 31 Mar, 22 Jun, 23 Jun, 30 Nov, 01 Dec",17455
+6,HC021,HC044,Tampines Street 11 Blk 137 (Tampines Round Market and Food Centre),Bedok North Street 4 Blk 85 (85 Fengshan Centre),Tampines West,1616,3035,551,5,"28 Sep, 29 Sep, 30 Sep, 01 Oct, 02 Oct",15177
+7,HC001,HC098,Jurong East Street 24 Blk 254 (Yuhua Village Market and Food Centre),Bukit Batok West Hawker Centre,"Bukit Batok West, Brickworks",1408,5977,1186,2,"22 Jun, 23 Jun",11954
+8,HC010,HC043,New Upper Changi Road Blk 208B,Bedok North Street 3 Blk 538,Kembangan,1043,5920,1572,2,"16 Mar, 07 Sep",11840
+9,HC063,HC062,Clementi West Street 2 Blk 726,Clementi Ave 3 Blk 448,Clementi Woods,1052,1029,207,8,"22 Jun, 23 Jun, 28 Sep, 29 Sep, 30 Nov, 01 Dec, 02 Dec, 03 Dec",8235
+10,HC063,HC084,Clementi West Street 2 Blk 726,West Coast Drive Blk 503 (Ayer Rajah Food Centre),Clementi West,1016,1141,302,6,"14 Sep, 15 Sep, 14 Dec, 15 Dec, 16 Dec, 17 Dec",6843
+11,HC034,HC110,Ang Mo Kio Ave 10 Blk 409 (Teck Ghee Square),Ang Mo Kio Ave 1 Blk 341 (Teck Ghee Court),Marymount,800,3243,670,2,"03 Aug, 04 Aug",6486
+12,HC036,HC039,Ang Mo Kio Ave 10 Blk 527 (Cheng San Market and Cooked Food Centre),Ang Mo Kio Ave 6 Blk 724 (Blk 724 Ang Mo Kio Market),"Cheng San, Yio Chu Kang East",887,2799,717,2,"23 Mar, 24 Mar",5598
+13,HC081,HC031,Toa Payoh Lorong 8 Blk 210,Toa Payoh Lorong 7 Blk 22 (Kim Keat Palm Market and Food Centre),"Potong Pasir, Bishan East",613,1243,326,3,"12 Oct, 13 Oct, 14 Oct",3729
+14,HC020,HC049,Taman Jurong Market and Food Centre,Boon Lay Place Blk 221A/B (Boon Lay Place Market and Food Village),Taman Jurong,1518,1813,286,2,"30 Nov, 01 Dec",3627
+15,HC073,HC059,Hougang Street 21 Blk 209 (Kovan Hougang Market and Food Centre),Ci Yuan Hawker Centre,Kovan,1829,612,116,4,"09 Mar, 10 Mar, 08 Jun, 09 Jun",2446
+16,HC047,HC116,Bendemeer Road Blk 29 (Bendemeer Market and Food Centre),Berseh Food Centre,"Bendemeer, Lavender",1480,1162,270,2,"08 Jun, 09 Jun",2324
+17,HC077,HC090,Jalan Bukit Merah Blk 6 (ABC Brickworks Market/Food Centre),Margaret Drive Hawker Centre,Margaret Drive,1233,374,74,3,"18 May, 19 May, 20 May",1122
+18,HC031,HC086,Toa Payoh Lorong 7 Blk 22 (Kim Keat Palm Market and Food Centre),Whampoa Drive Blk 90 (Whampoa Drive Makan Place/Whampoa Food Centre),Balestier,1380,322,69,3,"21 Sep, 22 Sep, 23 Sep",966
+19,HC059,HC092,Ci Yuan Hawker Centre,Fernvale Hawker Centre & Market,Trafalgar,1928,416,79,2,"09 Mar, 10 Mar",832
+20,HC064,HC128,Empress Road Blk 7 (Empress Road Market and Food Centre),Holland Village Market and Food Centre,"Leedon Park, Farrer Court",1327,785,134,1,23 Mar,785
+21,HC012,HC074,Old Airport Road Blk 51 (51 Old Airport Road Food Centre and Shopping Mall),Jalan Batu Blk 4A (Blk 4A Jalan Batu Hawker Centre/Market),Mountbatten,685,310,59,2,"08 Jun, 09 Jun",621
+22,HC054,HC087,Cambridge Road Blk 41A (Pek Kio Market and Food Centre),Whampoa Drive Blk 91/92 (Whampoa Drive Makan Place/Whampoa Market),Moulmein,912,454,49,1,14 Sep,454
+23,HC071,HC115,Holland Drive Blk 44 (Holland Drive Market and Food Centre),Tanglin Halt Market,One North,1003,130,7,1,14 Sep,130
